@@ -1,0 +1,93 @@
+<html>
+<head><title>Enter Teacher</title>
+</head>
+<style>
+	/*body { background:linear-gradient(to top left,#00ff00,#bcbdc8);}*/
+/*#teacher_info{
+	
+	width:600px;
+	height:200px;
+	background-color:#abc;
+	position:absolute;
+	top:80px;
+	left:400px;
+	
+
+}
+#heading{
+	text-align:center;
+}
+.label{
+	width:150px;
+	float:left;
+	height:30px;
+	
+}
+.data{
+	width:300px;
+	margin:5px;
+	float:left;	
+	height:25px;
+	background-color:#efefef;
+}*/
+
+
+				#teacher_info{
+					position:absolute;
+					top:80px;
+					left:400px;
+				}
+				.label{
+					width:200px;
+					float:left;
+					height:30px;
+					background-color:#ababab;
+				}
+				.data{
+					width:300px;
+					margin:5px;
+					float:left;	
+					height:25px;
+					background-color:#efefef;
+				}
+				fieldset
+				{
+					width:550px;
+				}
+	
+		
+</style>
+<body>
+<!--
+<div id="teacher_info">
+	<form action ="enterteahcer.php" name"enteruserform" method="">
+		<h1 id="heading"> Teacher Information</h1>
+		
+		<label><b class="label"> Teacher Name</b> <input class ="data" type="text" name="teacher_name" placeholder="Teahcer Name"/> </br></label>
+		<label><b class="label"> Email</b> <input  class ="data" type="text" name="teacher_email" placeholder="Email"/> </br></label>
+		<input type="submit" name="submit" value"submit"/></br>
+		<a href="file:///E:/Android/attendence/admin%20panel/selectuser.html"><button type="button">Back</button></a>
+	</form>
+	
+	</div>-->
+	
+	
+	<div id="teacher_info">
+		<form action ="addteacher.php"  method="post">
+			<fieldset>
+				<legend><h1> Add Teacher</h1></legend>
+		
+		
+				<label><b class="label"> Teacher Name</b> <input class ="data" type="text" name="teacher_name" placeholder="Teahcer Name"/> </br></label>
+				<label><b class="label"> Email</b> <input  class ="data" type="text" name="teacher_email" placeholder="Email"/> </br></label>
+		
+				<input id="inp" style="width:100px;" type="submit" name="submit" value="Add">
+				<a href="file:///E:/Android/attendence/admin%20panel/selectuser.html"><input id="inp" style="width:100px;" type="button" name="back" value="back"></a>
+		
+			</fieldset>
+		</form>
+	</div>
+	
+</body>
+</html>
+

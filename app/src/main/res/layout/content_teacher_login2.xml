@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kuldip.attendance.TeacherLogin2"
+    tools:showIn="@layout/activity_teacher_login2"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#01101e"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tname"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="#01101e"
+        android:textSize="20sp"
+        android:text="Subject:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <TextView
+            android:textColor="#01101e"
+            android:textSize="20sp"
+            android:id="@+id/subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#01101e"
+        android:text="Section:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#01101e"
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#01101e"
+            android:text="Date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#01101e"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_attendance"
+        android:layout_height="wrap_content"/>
+
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:weightSum="2"
+       android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:background="@drawable/btn_selector"
+        android:layout_weight="1"
+        android:text="submit"
+        android:textColor="#ffffff"
+        android:id="@+id/submit"
+        />
+    <Button
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:background="@drawable/btn_selector"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:text="Edit"
+        android:id="@+id/edit"
+        />
+   </LinearLayout>
+
+
+</LinearLayout>
